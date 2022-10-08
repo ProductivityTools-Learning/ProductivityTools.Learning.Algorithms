@@ -10,7 +10,7 @@ namespace SortQuick
     {
 
 
-        private int Partition(int[] array, int low, int high)
+        private void Partition(int[] array, int low, int high)
         {
             Action<int, int> swap = (a, b) =>
             {
@@ -20,44 +20,38 @@ namespace SortQuick
             };
 
             int partitionPoint = low;
-            int partitionValue = array[partitionPoint];
-
-            int leftIterator = low + 1;
+            int leftIterator = low;
             int rightIterator = high;
 
 
             while (leftIterator <= rightIterator)
             {
-                while (array[leftIterator] < partitionValue && leftIterator < rightIterator)
+                while (array[leftIterator] < array[partitionPoint])
                 {
                     leftIterator++;
                 }
-
-                while (partitionValue < array[rightIterator] && leftIterator < rightIterator)
+                while (array[partitionPoint] < array[rightIterator] )
                 {
                     rightIterator--;
                 }
-                
-                swap(leftIterator, rightIterator);
-                leftIterator++;
-                rightIterator--;
+
+                if (leftIterator <= rightIterator)
+                {
+                    swap(leftIterator, rightIterator);
+                    leftIterator++;
+                    rightIterator--;
+                }
+
             }
-            swap(partitionPoint, rightIterator);
-            return rightIterator;
-        }
-
-        private void Sort(int[] array,int low, int high)
-        {
-            if (low >= high){return;}
-
-            var partitionPoint=Partition(array, low, high);
-            Sort(array, low,partitionPoint);
-            Sort(array, partitionPoint+1, high);
+            if (low < rightIterator)
+                Partition(array, low, rightIterator);
+            if (leftIterator < high)
+                Partition(array, leftIterator, high);
         }
 
         public void Sort(int[] array)
         {
-            Sort(array, 0, array.Length-1);
+            Partition(array, 0, array.Length - 1);
         }
     }
 }

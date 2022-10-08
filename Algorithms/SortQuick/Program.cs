@@ -3,17 +3,17 @@ using SortQuick;
 
 Console.WriteLine("Hello, World!");
 
-int[] a =new int[4];
+int[] a =new int[10];
 a[0] = 3;
 a[1] = 2;
 a[2] = 1;
 a[3] = 0;
-//a[4] = 6;
-//a[5] = 9;
-//a[6] = 2;
-//a[7] = 5;
-//a[8] = 4;
-//a[9] = 2;
+a[4] = 6;
+a[5] = 9;
+a[6] = 2;
+a[7] = 5;
+a[8] = 4;
+a[9] = 2;
 
 QuickSort quickSort = new QuickSort();    
 quickSort.Sort(a);
