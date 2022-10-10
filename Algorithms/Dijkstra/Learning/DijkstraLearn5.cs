@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dijkstra.Learning
 {
-    internal class DijsktraLearn5
+    internal class DijkstraLearn5
     {
         EdgePriorityQueue edgePriorityQueue = new EdgePriorityQueue();
         HashSet<Node> Visted=new HashSet<Node>();

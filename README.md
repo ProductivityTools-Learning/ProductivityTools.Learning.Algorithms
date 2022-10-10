@@ -90,3 +90,15 @@ In practice, Dijkstra’s algorithm is used when we want to save time and fuel t
 |EdgePriorityQueue|EdgePriorityQuene|EdgePriorityQuene|
 |NodesVisitedHashset|NodesVistedHashset|QuickUnion<Node>|
 |DistanceToDictionary|EdgeMSTList|MST| 
+
+
+### Learning
+|Date|BFS|DFS|MSTPrim|MSTKruskal|Dijsktra|QuickSort|
+|---|---|---|---|---|---|---|
+|2022.10.10|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|
+
+
+Learnings from learning:
+- BFS/DFS is used to not directed not weight graph, that is why we need queue<Node> not edge priority queue
+- Always be sure if we are talking about graph or a tree, if graph, we need to have Visited structure
+- Dijkstra is to finding the distance to
