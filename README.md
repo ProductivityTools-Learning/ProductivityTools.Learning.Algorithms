@@ -96,7 +96,7 @@ In practice, Dijkstra’s algorithm is used when we want to save time and fuel t
 |Date|BFS|DFS|MSTPrim|MSTKruskal|Dijsktra|QuickSort|
 |---|---|---|---|---|---|---|
 |2022.10.10|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|<img src="./Images/Icons/repeat.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|
-|2022.10.11|<img src="./Images/Icons/yes.png" width="12"/>
+|2022.10.11|<img src="./Images/Icons/yes.png" width="12"/>|<img src="./Images/Icons/yes.png" width="12"/>|||<img src="./Images/Icons/yes.png" width="12"/>|
 
 
 Learnings from learning:
